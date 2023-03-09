@@ -28,8 +28,7 @@ const CartContainer = () => {
         <CartItem />
       </div>
       {/* cart footer */}
-      <footer>
-        <hr />
+      <div className="footer">
         <div className="cart-total">
           <h4>
             total <span>$ {total}</span>
@@ -38,7 +37,7 @@ const CartContainer = () => {
         <button className="btn clear-btn" onClick={clearCart}>
           clear cart
         </button>
-      </footer>
+      </div>
     </section>
   );
 };
