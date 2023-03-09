@@ -1,6 +1,6 @@
 import React from "react";
-import { GoPlus } from "../node_modules/react-icons/go";
-import { HiMinusSm } from "../node_modules/react-icons/hi";
+// import { GoPlus } from "./go";
+// import { HiMinusSm } from "./hi";
 import { useGlobalContext } from "./context";
 const CartItem = () => {
   const { state, removeItem, toggleAmount } = useGlobalContext();
@@ -27,7 +27,7 @@ const CartItem = () => {
             className="amount-btn"
             onClick={() => toggleAmount(id, "INC")}
           >
-            <GoPlus />
+            +
           </button>
           {/* amount */}
           <p className="amount">{amount}</p>
@@ -36,7 +36,7 @@ const CartItem = () => {
             className="amount-btn"
             onClick={() => toggleAmount(id, "DEC")}
           >
-            <HiMinusSm />
+            -
           </button>
         </div>
       </article>
