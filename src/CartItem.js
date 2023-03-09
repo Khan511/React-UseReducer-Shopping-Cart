@@ -1,6 +1,6 @@
 import React from "react";
-import { GoPlus } from "react-icons/go";
-import { HiMinusSm } from "react-icons/hi";
+import { GoPlus } from "../node_modules/react-icons/go";
+import { HiMinusSm } from "../node_modules/react-icons/hi";
 import { useGlobalContext } from "./context";
 const CartItem = () => {
   const { state, removeItem, toggleAmount } = useGlobalContext();
